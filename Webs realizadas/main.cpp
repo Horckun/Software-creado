@@ -1,6 +1,7 @@
 // Includes
 #include "header.h"
 #include "insertarTecnologia.cpp"
+#include "insertarWeb.cpp"
 #include "vaciarTecnologia.cpp"
 #include "vaciarWebs.cpp"
 
@@ -49,7 +50,14 @@ int main() {
 					
 					// Llama a función
 					insertarTecnologia();
+					break;
+				}
+				case 2: {
+					// Limpiar pantalla
+					system("cls");
 					
+					// Llama a función
+					insertarWeb();
 					break;
 				}
 				case 9: {

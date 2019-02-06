@@ -17,8 +17,8 @@ void insertarTecnologia() {
 	ifstream lectura;
 	
 	// Abrir archivo
-	escritura.open("Nombres de tecnologias.dat",ios::app);
-	lectura.open("Nombres de tecnologias.dat");
+	escritura.open("Tecnologias.dat",ios::app);
+	lectura.open("Tecnologias.dat");
 	
 	// Comprobar fichero
 	if(!escritura) {
@@ -30,9 +30,7 @@ void insertarTecnologia() {
 		cout << "El archivo s" << char(161) << " existe." << endl << endl;
 		
 		// Mostrar
-		
 		cout << "Tecnolog" << char(161) << "as introducidas anteriormente:" << endl << endl;
-		
 		while(!lectura.eof()) {
 			lectura.getline(palabra,100);
 			cout << "- [" << i + 1 << "] " << palabra << endl;

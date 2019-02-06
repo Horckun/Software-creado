@@ -42,7 +42,6 @@ void vaciarTecnologia() {
 				for(i = 0; i < cantidad; i++) {
 					cout << "Vaciando " << i + 1 << " de " << cantidad << " tecnolog" << char(161) << "as...\r";
 					Sleep(1000);
-					tech.lleno = 0;
 					archivo.clear();
 				}
 				break;

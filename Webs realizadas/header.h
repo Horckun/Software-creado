@@ -9,16 +9,15 @@ using namespace std;
 // Estructuras
 struct webs {
 	char nombre[100];
-	int lleno;
 };
 struct tecnologia {
 	char nombre[100];
-	int lleno;
-	struct webs web[4];
+	struct webs web;
 };
 
 // Prototipos
 void insertarTecnologia();
+void insertarWeb();
 void vaciarTecnologia();
 void vaciarWebs();
 

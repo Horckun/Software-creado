@@ -39,9 +39,6 @@ void vaciarWebs() {
 						
 						// Dormir
 						Sleep(1000);
-						
-						// Eliminar webs
-						tech.web[j].lleno = 0;
 					}
 				}
 				break;
