@@ -2,6 +2,7 @@
 #include "header.h"
 #include "insertarTecnologia.cpp"
 #include "insertarWeb.cpp"
+#include "modificarTecnologia.cpp"
 #include "vaciarTecnologia.cpp"
 #include "vaciarWebs.cpp"
 
@@ -58,6 +59,14 @@ int main() {
 					
 					// Llama a función
 					insertarWeb();
+					break;
+				}
+				case 3: {
+					// Limpiar pantalla
+					system("cls");
+					
+					// Llama a función
+					modificarTecnologia();
 					break;
 				}
 				case 9: {

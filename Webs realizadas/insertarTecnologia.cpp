@@ -39,12 +39,11 @@ void insertarTecnologia() {
 			
 		// Solicitar nombre
 		cout << "\tIntroduce un nombre para la tecnolog" << char(161) << "a: ";
-		cin >> tech.nombre;
+		cin >> palabra;
 		cout << endl;
 				
 		// Insertar nombre
-		escritura << tech.nombre;
-		escritura << endl;
+		escritura << solicitud << endl;
 	}
 	
 	// Cerrar archivo

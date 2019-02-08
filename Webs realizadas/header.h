@@ -6,22 +6,13 @@
 #include <fstream>
 using namespace std;
 
-// Estructuras
-struct webs {
-	char nombre[100];
-};
-struct tecnologia {
-	char nombre[100];
-	struct webs web;
-};
-
 // Prototipos
 void insertarTecnologia();
 void insertarWeb();
+void modificarTecnologia();
 void vaciarTecnologia();
 void vaciarWebs();
 
 // Variables globales
 int opcion, cantidad, i, j, lleno, aux;
-char palabra[100];
-tecnologia tech;
+char palabra[100], solicitud[100], buscar[100];

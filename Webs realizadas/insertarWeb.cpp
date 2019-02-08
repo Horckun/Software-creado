@@ -10,11 +10,8 @@ void insertarWeb() {
 	cout << "\t=======================" << endl << endl;
 	
 	// Declarar variable para manejar el archivo
-	ofstream escribirWeb, escribirCode;
-	ofstream escribirWP;
-	ofstream escribirJoomla;
-	ifstream leerTecnologia;
-	ifstream leerWeb;
+	ofstream escribirWeb, escribirCode, escribirWP, escribirJoomla;
+	ifstream leerTecnologia, leerWeb;
 	
 	// Abrir archivo
 	leerTecnologia.open("Tecnologias.dat");
@@ -65,34 +62,34 @@ void insertarWeb() {
 			case 0: {
 				// Solicitar nombre
 				cout << "\tIntroduce la url de la p" << char(160) << "gina web: ";
-				cin >> tech.web.nombre;
+				cin >> solicitud;
 				cout << endl;
 				
 				// Insertar nombre
-				escribirWeb << tech.web.nombre << endl;
-				escribirCode << tech.web.nombre << endl;
+				escribirWeb << solicitud << endl;
+				escribirCode << solicitud << endl;
 				break;
 			}
 			case 1: {
 				// Solicitar nombre
 				cout << "\tIntroduce la url de la p" << char(160) << "gina web: ";
-				cin >> tech.web.nombre;
+				cin >> solicitud;
 				cout << endl;
 				
 				// Insertar nombre
-				escribirWeb << tech.web.nombre << endl;
-				escribirWP << tech.web.nombre << endl;
+				escribirWeb << solicitud << endl;
+				escribirWP << solicitud << endl;
 				break;
 			}
 			case 2: {
 				// Solicitar nombre
 				cout << "\tIntroduce la url de la p" << char(160) << "gina web: ";
-				cin >> tech.web.nombre;
+				cin >> solicitud;
 				cout << endl;
 				
 				// Insertar nombre
-				escribirWeb << tech.web.nombre << endl;
-				escribirJoomla << tech.web.nombre << endl;
+				escribirWeb << solicitud << endl;
+				escribirJoomla << solicitud << endl;
 				break;
 			}
 			default: {
