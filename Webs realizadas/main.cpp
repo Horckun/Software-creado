@@ -3,6 +3,7 @@
 #include "insertarTecnologia.cpp"
 #include "insertarWeb.cpp"
 #include "modificarTecnologia.cpp"
+#include "modificarWeb.cpp"
 #include "vaciarTecnologia.cpp"
 #include "vaciarWebs.cpp"
 
@@ -67,6 +68,14 @@ int main() {
 					
 					// Llama a función
 					modificarTecnologia();
+					break;
+				}
+				case 4: {
+					// Limpiar pantalla
+					system("cls");
+					
+					// Llama a función
+					modificarWeb();
 					break;
 				}
 				case 9: {

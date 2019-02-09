@@ -10,6 +10,7 @@ using namespace std;
 void insertarTecnologia();
 void insertarWeb();
 void modificarTecnologia();
+void modificarWeb();
 void vaciarTecnologia();
 void vaciarWebs();
 
