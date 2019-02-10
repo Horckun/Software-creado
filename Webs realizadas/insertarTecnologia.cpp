@@ -17,8 +17,8 @@ void insertarTecnologia() {
 	ifstream lectura;
 	
 	// Abrir archivo
-	escritura.open("Tecnologias.dat",ios::app);
-	lectura.open("Tecnologias.dat");
+	escritura.open("Tecnologías.dat",ios::app);
+	lectura.open("Tecnologías.dat");
 	
 	// Comprobar fichero
 	if(!escritura) {

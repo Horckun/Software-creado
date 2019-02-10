@@ -14,8 +14,8 @@ void modificarTecnologia() {
 	ifstream lectura;
 	
 	// Abrir archivo
-	lectura.open("Tecnologias.dat");
-	escritura.open("Tecnologias.dat",ios::app);
+	lectura.open("Tecnologías.dat");
+	escritura.open("Tecnologías.dat",ios::app);
 	escritura2.open("tmp.dat");
 	
 	// Comprobar fichero
@@ -43,7 +43,7 @@ void modificarTecnologia() {
 		lectura.close();
 		
 		// Abrir archivo
-		lectura.open("Tecnologias.dat");
+		lectura.open("Tecnologías.dat");
 		
 		// Buscar palabra
 		cout << "\tIntroduce el nombre de la tecnolog" << char(161) << "a a reemplazar: ";
@@ -67,8 +67,8 @@ void modificarTecnologia() {
 	escritura2.close();
 	
 	// Eliminar archivo
-	remove("Tecnologias.dat");
+	remove("Tecnologías.dat");
 	
 	// Renombrar archivo
-	rename("tmp.dat","Tecnologias.dat");
+	rename("tmp.dat","Tecnologías.dat");
 }

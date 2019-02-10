@@ -11,6 +11,7 @@ void insertarTecnologia();
 void insertarWeb();
 void modificarTecnologia();
 void modificarWeb();
+void consultarTecnologia();
 void vaciarTecnologia();
 void vaciarWebs();
 
