@@ -5,6 +5,7 @@
 #include "modificarTecnologia.cpp"
 #include "modificarWeb.cpp"
 #include "consultarTecnologia.cpp"
+#include "consultarWebs.cpp"
 #include "vaciarTecnologia.cpp"
 #include "vaciarWebs.cpp"
 
@@ -85,6 +86,14 @@ int main() {
 					
 					// Llama a función
 					consultarTecnologia();
+					break;
+				}
+				case 6: {
+					// Limpiar pantalla
+					system("cls");
+					
+					// Llama a función
+					consultarWebs();
 					break;
 				}
 				case 9: {
