@@ -14,8 +14,8 @@ void modificarWeb() {
 	ifstream lectura;
 	
 	// Abrir archivo
-	lectura.open("Páginas web.dat");
-	escritura.open("Páginas web.dat",ios::app);
+	lectura.open("PaginasWeb.dat");
+	escritura.open("PaginasWeb.dat",ios::app);
 	escritura2.open("tmp.dat");
 	
 	// Comprobar fichero
@@ -43,7 +43,7 @@ void modificarWeb() {
 		lectura.close();
 		
 		// Abrir archivo
-		lectura.open("Páginas web.dat");
+		lectura.open("PaginasWeb.dat");
 		
 		// Buscar palabra
 		cout << "\tIntroduce la web a reemplazar: ";
@@ -67,8 +67,8 @@ void modificarWeb() {
 	escritura2.close();
 	
 	// Eliminar archivo
-	remove("Páginas web.dat");
+	remove("PaginasWeb.dat");
 	
 	// Renombrar archivo
-	rename("tmp.dat","Páginas web.dat");
+	rename("tmp.dat","PaginasWeb.dat");
 }

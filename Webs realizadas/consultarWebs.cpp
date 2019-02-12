@@ -13,7 +13,7 @@ void consultarWebs() {
 	ifstream lectura;
 	
 	// Abrir archivo
-	lectura.open("Páginas web.dat");
+	lectura.open("PaginasWeb.dat");
 	
 	// Comprobar fichero
 	if(!lectura) {

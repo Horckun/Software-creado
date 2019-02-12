@@ -6,6 +6,7 @@
 #include "modificarWeb.cpp"
 #include "consultarTecnologia.cpp"
 #include "consultarWebs.cpp"
+#include "consultarArchivo.cpp"
 #include "vaciarTecnologia.cpp"
 #include "vaciarWebs.cpp"
 
@@ -35,7 +36,7 @@ int main() {
 			cout << "\t| [4] - Modificar p" << char(160) <<"gina web  |" << endl;
 			cout << "\t| [5] - Consultar tecnolog" << char(161) <<"a  |" << endl;
 			cout << "\t| [6] - Consultar p" << char(160) <<"gina web  |" << endl;
-			cout << "\t| [7] - Eliminar tecnolog" << char(161) <<"a   |" << endl;
+			cout << "\t| [7] - Consultar archivo     |" << endl;
 			cout << "\t| [8] - Eliminar p" << char(160) <<"gina web   |" << endl;
 			cout << "\t| [9] - Vaciar tecnolog" << char(161) <<"a     |" << endl;
 			cout << "\t| [10] - Vaciar p" << char(160) <<"gina web    |" << endl;
@@ -94,6 +95,14 @@ int main() {
 					
 					// Llama a función
 					consultarWebs();
+					break;
+				}
+				case 7: {
+					// Limpiar pantalla
+					system("cls");
+					
+					// Llama a función
+					consultarArchivo();
 					break;
 				}
 				case 9: {
