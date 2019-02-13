@@ -13,6 +13,7 @@ void modificarTecnologia();
 void modificarWeb();
 void consultarTecnologia();
 void consultarWebs();
+void crearArchivo();
 void consultarArchivo();
 void vaciarTecnologia();
 void vaciarWebs();

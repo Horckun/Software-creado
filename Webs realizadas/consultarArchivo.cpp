@@ -1,6 +1,6 @@
 void consultarArchivo() {
 	// Personalización
-	system("color 1B");
+	system("color 1C");
 	
 	// Título
 	cout << "\t=====================" << endl;
