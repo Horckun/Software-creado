@@ -1,22 +1,18 @@
-// Webs realizadas
+// Gestión de archivos
 
 // Librerías
 #include <iostream>
+#include <string.h>
 #include <windows.h>
 #include <fstream>
 using namespace std;
 
 // Prototipos
-void insertarTecnologia();
-void insertarWeb();
-void modificarTecnologia();
-void modificarWeb();
-void consultarTecnologia();
-void consultarWebs();
 void crearArchivo();
+void insertarContenido();
+void modificarContenido();
 void consultarArchivo();
-void vaciarTecnologia();
-void vaciarWebs();
+void eliminarArchivo();
 
 // Variables globales
 int opcion, cantidad, i, j, lleno, aux;

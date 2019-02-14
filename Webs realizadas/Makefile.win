@@ -1,15 +1,16 @@
-# Project: Webs realizadas
+# Project: Gestión de archivos
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o insertarTecnologia.o vaciarTecnologia.o vaciarWebs.o insertarWeb.o modificarTecnologia.o modificarWeb.o consultarTecnologia.o consultarWebs.o consultarArchivo.o crearArchivo.o
-LINKOBJ  = main.o insertarTecnologia.o vaciarTecnologia.o vaciarWebs.o insertarWeb.o modificarTecnologia.o modificarWeb.o consultarTecnologia.o consultarWebs.o consultarArchivo.o crearArchivo.o
+RES      = Webs_realizadas_private.res
+OBJ      = main.o consultarArchivo.o crearArchivo.o insertarContenido.o modificarContenido.o eliminarArchivo.o $(RES)
+LINKOBJ  = main.o consultarArchivo.o crearArchivo.o insertarContenido.o modificarContenido.o eliminarArchivo.o $(RES)
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = "Webs realizadas.exe"
+BIN      = "Gestion de archivos.exe"
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -27,32 +28,21 @@ $(BIN): $(OBJ)
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
-insertarTecnologia.o: insertarTecnologia.cpp
-	$(CPP) -c insertarTecnologia.cpp -o insertarTecnologia.o $(CXXFLAGS)
-
-vaciarTecnologia.o: vaciarTecnologia.cpp
-	$(CPP) -c vaciarTecnologia.cpp -o vaciarTecnologia.o $(CXXFLAGS)
-
-vaciarWebs.o: vaciarWebs.cpp
-	$(CPP) -c vaciarWebs.cpp -o vaciarWebs.o $(CXXFLAGS)
-
-insertarWeb.o: insertarWeb.cpp
-	$(CPP) -c insertarWeb.cpp -o insertarWeb.o $(CXXFLAGS)
-
-modificarTecnologia.o: modificarTecnologia.cpp
-	$(CPP) -c modificarTecnologia.cpp -o modificarTecnologia.o $(CXXFLAGS)
-
-modificarWeb.o: modificarWeb.cpp
-	$(CPP) -c modificarWeb.cpp -o modificarWeb.o $(CXXFLAGS)
-
-consultarTecnologia.o: consultarTecnologia.cpp
-	$(CPP) -c consultarTecnologia.cpp -o consultarTecnologia.o $(CXXFLAGS)
-
-consultarWebs.o: consultarWebs.cpp
-	$(CPP) -c consultarWebs.cpp -o consultarWebs.o $(CXXFLAGS)
-
 consultarArchivo.o: consultarArchivo.cpp
 	$(CPP) -c consultarArchivo.cpp -o consultarArchivo.o $(CXXFLAGS)
 
 crearArchivo.o: crearArchivo.cpp
 	$(CPP) -c crearArchivo.cpp -o crearArchivo.o $(CXXFLAGS)
+
+insertarContenido.o: insertarContenido.cpp
+	$(CPP) -c insertarContenido.cpp -o insertarContenido.o $(CXXFLAGS)
+
+modificarContenido.o: modificarContenido.cpp
+	$(CPP) -c modificarContenido.cpp -o modificarContenido.o $(CXXFLAGS)
+
+eliminarArchivo.o: eliminarArchivo.cpp
+	$(CPP) -c eliminarArchivo.cpp -o eliminarArchivo.o $(CXXFLAGS)
+
+Webs_realizadas_private.res: Webs_realizadas_private.rc 
+	$(WINDRES) -i Webs_realizadas_private.rc --input-format=rc -o Webs_realizadas_private.res -O coff 
+

@@ -1,20 +1,21 @@
 void crearArchivo() {
 	// Personalización
-	system("color 1B");
+	system("color 0B");
 	
 	// Título
-	cout << "\t=================" << endl;
-	cout << "\t=               =" << endl;
-	cout << "\t= CREAR ARCHIVO =" << endl;
-	cout << "\t=               =" << endl;
-	cout << "\t=================" << endl << endl;
+	cout << "\t#######################" << endl;
+	cout << "\t#                     #" << endl;
+	cout << "\t# CREACI" << char(224) << "N DE ARCHIVO #" << endl;
+	cout << "\t#                     #" << endl;
+	cout << "\t#######################" << endl << endl;
 	
 	// Declarar variable para manejar el archivo
 	ofstream crear;
 	
 	// Solicitar nombre archivo
-	cout << "\tIntroduce el nombre del archivo que quieres crear junto con la extensi" << char(162) << "n (nombreArchivo.dat): ";
-	cin >> solicitud;
+	cout << "Introduce el nombre del archivo junto con la extensi" << char(162) << "n '.dat' o '.txt' (nombreArchivo.extensi" << char(162) << "n): ";
+	fflush(stdin);
+	gets(solicitud);
 	cout << endl;
 	
 	// Abrir archivo
@@ -27,7 +28,7 @@ void crearArchivo() {
 		// Dormir
 		Sleep(1000);
 	} else {
-		cout << "El archivo se ha creado correctamente." << endl << endl;
+		cout << "El archivo " << solicitud << " se ha creado correctamente." << endl << endl;
 		
 		system("pause");
 	}
