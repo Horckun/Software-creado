@@ -119,6 +119,11 @@ int main() {
 	} while(opcion == 1);
 	
 	// Cierre
+	cout << "\t*******************************" << endl;
+	cout << "\t*                             *" << endl;
+	cout << "\t* Cr" << char(130) << "ditos: http://horckun.es *" << endl;
+	cout << "\t*                             *" << endl;
+	cout << "\t*******************************" << endl << endl;
 	cout << "Pulsa Intro para terminar...";
 	cin.get();
 	return 0;
