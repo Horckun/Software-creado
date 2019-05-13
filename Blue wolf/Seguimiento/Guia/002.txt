@@ -1,0 +1,9 @@
+Estás en tu casa viendo una película
+Es de noche y te vas a dormir
+-----------------------------
+Te despiertas en pleno desierto
+Encuentras 6 cofres
+Cada cofre tiene un símbolo
+(tipos de armas)
+Tienes que elegir
+-----------------
